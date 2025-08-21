@@ -2,7 +2,7 @@
 
 HALLaR is a CPU-based first-order solver implemented in Julia for large-scale semidefinite programming (SDP) problems. It employs a hybrid convex-nonconvex approach based on an Augmented Lagrangian framework, specifically designed to exploit low-rank structures in the solution. It is developed based on methodologies described in [this paper](https://optimization-online.org/wp-content/uploads/2024/01/Manuscript_OptOnlineMar31.pdf). HALLaR supports the standard sparse SDPA format (`.dat-s`) and introduces the Hybrid Sparse Low-Rank (HSLR) format. HSLR allows users to input cost and constraint matrices as sums of sparse and low-rank components, significantly reducing memory requirements for structured problems.
 
-To check out our GPU-accelerated variant of HALLaR, visit [cuHALLar](https://github.com/OPTHALLaR/cuHALLaR)
+To check out our GPU-accelerated variant of HALLaR, visit [cuHALLaR](https://github.com/OPTHALLaR/cuHALLaR)
 
 #### Problem Statement:
 
@@ -112,7 +112,7 @@ HALLaR was mainly developed using Red Hat Enterprise Linux 9.5, however it is ex
 
 #### Output Format
 
-Hallar output the primal and dual solution as csv files. Option `-p` provides a path for the output primal solution, and `-d` a path to the dual solution. The primal solution output is the lowrank factor $Y \in \mathbb{R}^{n \times r}$, such that $X = YY^\top$. The dual solution file contains one line where the first element is the dual of the trace constraint, while the remaining elements are the dual vector $p \in \mathbb{R}^m$.
+HALLaR output the primal and dual solution as csv files. Option `-p` provides a path for the output primal solution, and `-d` a path to the dual solution. The primal solution output is the lowrank factor $Y \in \mathbb{R}^{n \times r}$, such that $X = YY^\top$. The dual solution file contains one line where the first element is the dual of the trace constraint, while the remaining elements are the dual vector $p \in \mathbb{R}^m$.
 
 #### Settings
 
@@ -137,7 +137,7 @@ HALLaR provides users with customizable parameters to fine-tune the solving proc
 | **AIPP Parameters**          |                    |                                                                                                                                                         |
 | `--maxiter_aipp`             | `5`                | Maximum number of AIPP iterations.                                                                                                                      |
 | `--lam0_aipp`                | `0.1`              | AIPP initial parameter λ₀.                                                                                                                              |
-| **Hybrid Low-Rank / Hallar** |                    |                                                                                                                                                         |
+| **Hybrid Low-Rank / HALLaR** |                    |                                                                                                                                                         |
 | `--maxiter_hlr`              | `10`               | Maximum iterations for the hybrid low-rank method.                                                                                                      |
 | `--maxiter_hallar`           | `1e4`              | Maximum number of outer \ourmethod iterations.                                                                                                          |
 | **Stopping Criteria**        |                    |                                                                                                                                                         |
@@ -162,7 +162,7 @@ For example, to set **`time_limit`** to `300.0` and solve a problem, we can exec
 ./bin/HALLaR -i <path_to_file> --time_limit 300.0
 ```
 
-Alternatively, the user may build a configuration file with the options (see [the example](examples/options.cfg)) and pass to Hallar with ``-c <path_to_file>`
+Alternatively, the user may build a configuration file with the options (see [the example](examples/options.cfg)) and pass to HALLaR with ``-c <path_to_file>`
 
 #### Developing Team
 
