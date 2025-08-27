@@ -173,7 +173,7 @@ HALLaR is developed by
 - Vincent Guigues
 - Renato D.C. Monteiro
 - Victor Hugo Nascimento: [nascimento.victor.1@fgv.edu.br](mailto:nascimento.victor.1@fgv.edu.br)
-- Arnesh Sujanani: [a3sujana@uwaterloo.edu](mailto:a3sujana@uwaterloo.edu)
+- Arnesh Sujanani: [a3sujana@uwaterloo.edu](mailto:a3sujana@uwaterloo.ca)
 
 #### Reference
 
