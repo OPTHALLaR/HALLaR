@@ -34,7 +34,7 @@ $$
 ### Getting Started
 
 1.  **Download the Release**
-    Navigate to the [HALLaR release page](https://www.google.com/search?q=https://github.com/OPTHALLaR/HALLaR/releases). Download the latest `HALLaR.tar.gz` file directly from the **Assets** section. **Important:** Do not download the repository source code (e.g., "Source code (zip)"), as it will not contain the pre-built binary and uncompressing it will fail.
+Download the latest `HALLaR.tar.gz` file directly from the **Assets** section. **Important:** Do not download the repository source code (e.g., "Source code (zip)"), as it will not contain the pre-built binary and uncompressing it will fail.
 
 2.  **Uncompress the Archive**
     In your terminal, change to the directory containing the downloaded file and run:
